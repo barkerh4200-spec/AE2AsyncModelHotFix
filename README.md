@@ -2,7 +2,9 @@ LDLib / AE2 Chunk Meshing Crash Patch
 What this patch does
 
 Simple Explanation:
-Stops the game from crashing with the following error with ae2+embeddium/ldlib: Description: Encountered exception while building chunk meshes
+Stops the game from crashing with the following error with ae2+embeddium/ldlib: 
+
+Description: Encountered exception while building chunk meshes
 
 Compatibility (must be running these versions or recompile is needed):
 appliedenergistics2-forge-15.4.10.jar
