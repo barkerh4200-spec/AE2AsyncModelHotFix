@@ -1,0 +1,43 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="ldlibcompat"
+version="${file.jarVersion}"
+displayName="AE2 Embeddium Render Fix"
+description='''
+Client-side render safety patch for Applied Energistics 2 when used with
+Embeddium/Sodium on Forge.
+
+Guards unsafe ModelData access during async chunk meshing to prevent
+intermittent ConcurrentModificationException crashes.
+'''
+
+# Forge
+[[dependencies.ldlibcompat]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+
+# AE2 (explicit, since we mixin into it)
+[[dependencies.ldlibcompat]]
+modId="ae2"
+mandatory=true
+versionRange="[15.4.0,)"
+ordering="NONE"
+side="CLIENT"
+
+# Optional but recommended: Embeddium present
+[[dependencies.ldlibcompat]]
+modId="embeddium"
+mandatory=false
+versionRange="[0.3.0,)"
+ordering="NONE"
+side="CLIENT"
+
+# Mixins
+[[mixins]]
+config="mixins.yourmod.json"

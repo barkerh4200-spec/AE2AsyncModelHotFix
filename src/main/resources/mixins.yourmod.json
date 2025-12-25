@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "your.mod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ae2.CableBusBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
